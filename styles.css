@@ -1,0 +1,398 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+	width: -webkit-calc(100% - 40px);   
+	width: -moz-calc(100% - 40px);
+	width: calc(100% - 40px);
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.container-2{
+    width: -webkit-calc(100% - 40px);   
+    width: -moz-calc(100% - 40px);
+    width: calc(100% - 40px);
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! */
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+header .container nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    font-family: 'poppins', sans-serif;
+}
+
+header .container nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header .container nav ul li a:hover{
+    border-bottom: 2px solid black;
+}
+header .container nav ul li a span {
+    color: #FF7F10;
+}
+
+header .container nav ul li a span:hover{
+    border-bottom: 3px solid #FF7F10;
+}
+
+header .container #nav-button {
+    display: none;
+}
+
+/* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! */
+
+main .home .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main .home .container .home-text{
+    width: 100%;
+    max-width: 350px;
+}
+
+main .home .container .home-text header h1 {
+    font-family: 'poppins', sans-serif;
+    color: #FF7F10;
+    font-weight: 700;
+    font-size: 2.3rem;
+}
+
+main .home .container .home-text p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+main .home .container .home-image img {
+    width: 100%;
+    max-width: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+/* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! */
+main .menu .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+main .menu .container .menu-card {
+    background-color: #F3F3F3;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .menu .container .menu-card .menu-text{
+width: 100%;
+max-width: 200px;
+}
+
+main .menu .container .menu-card .menu-text h3 {
+    text-align: left;
+    font-weight: 500;
+}
+
+main .menu .container .menu-card .menu-text p {
+    text-align: right;
+    font-weight: 300;
+}
+
+main .menu .container .menu-card .menu-text button {
+    width: 100%;
+    max-width: 200px;
+    background-color: #FF7F10;
+    color: white;
+    border: 0;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+
+main .menu .container .menu-card .menu-text button:hover {
+    background-color: white;
+    border: 1px solid #FF7F10;
+    color: #FF7F10;
+}
+
+/* ! */ /* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! */
+
+main .welcome-content .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .welcome-content .container .welcome-image img{
+    width: 100%;
+    max-width: 600px;
+}
+
+main .welcome-content .container .welcome-text{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+main .welcome-content .container .welcome-text header h1 {
+    font-weight: 500;
+    font-size: 2.3rem;
+}
+
+main .welcome-content .container .welcome-text p {
+    font-weight: 400;
+    color: gray;
+}
+
+main .welcome-content .container .welcome-text .welcome-button{
+    margin-top: 20px;
+}
+
+main .welcome-content .container .welcome-text .welcome-button .button-1{
+    padding: 15px 30px;
+    margin-right: 20px;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+main .welcome-content .container .welcome-text .welcome-button .button-1:hover{
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+main .welcome-content .container .welcome-text .welcome-button .button-2{
+    padding: 15px 10px;
+    background-color: #FF7F10;
+    color: white;
+    border: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+
+main .welcome-content .container .welcome-text .welcome-button .button-2:hover{
+    background-color: white;
+    border: 1px solid #FF7F10;
+    color: #FF7F10;
+}
+
+
+main .container .welcome-image .welcome-img{
+    display: block;
+    -webkit-animation: spin 8s linear infinite;
+    -moz-animation: spin 8s linear infinite;
+    animation: spin 8s linear infinite;
+}
+
+/*! keyframe !*/
+
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@keyframe spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+
+/* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! */
+
+main .review .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+main .review .container .review-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FF7F10;
+    color: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 50px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #FF7F10;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+main .review .container .review-card p {
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+main .review .container .review-card .review-profile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 230px;
+    gap: 10px;
+}
+
+main .review .container .review-card .review-profile p {
+    margin: 0;
+    text-align: left;
+}
+
+/* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! */
+
+footer{
+    background-color: #F3F3F3;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+footer .container .footer-col{
+    width: 100%;
+    max-width: 400px;
+}
+
+footer .container .footer-col ul {
+    list-style-type: none;
+}
+
+footer .container .footer-col ul li a{
+    text-decoration: none;
+}
+
+footer .container .footer-col h1 {
+    color: #FF7F10;
+}
+
+footer .container .footer-col ul li a {
+    color: black;
+}
+
+footer .container-2 {
+    text-align: center;
+    border-top: 2px solid #FF7F10;
+}
+
+footer .container-2 p {
+    padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+@media only screen and (max-width: 768px){
+    header .container{
+        flex-wrap: wrap;
+    }
+    header .container img{
+        width: 120px;
+    }
+
+    header .container nav{
+        width: 100%;    
+    }
+    header .container nav.active{
+        display: none;
+        width: 100%;
+    }
+
+    header .container #nav-button {
+        display: flex;
+    }
+
+
+
+    main .home .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+
+    main .menu .container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+	gap: 20px;
+}
+
+    main .welcome-content .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .welcome-content .container .welcome-image img{
+        width: 100%;
+        max-width: 200px;
+    }
+
+    footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+}
+
+    footer .container .footer-col{
+    width: 100%;
+    max-width: 400px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+}

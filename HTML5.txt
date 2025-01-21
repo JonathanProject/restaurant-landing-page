@@ -1,0 +1,8 @@
+Intinya Semantic element itu adalah Sebuah element yang Membantu agar Developer dan Web Browser Paham dan Tahu Sebuah Code yang Ada pada text editor Role/Tugasnya sebagai apa? Contoh Contoh Semantic 
+
+<header> -->Biasanya Digunakan sebagai Header atau Kepala Dari sebuah WEB BROWSER
+<nav> --> Biasanya terletak Di dalam Header karena fungsinya menunjukkan Ke Browser bahwasanya Code yang ada di Dalamnya ialah Navigasi
+<main> --> Digunakan untuk Mendefinisikan Bahwasannya Kode yang ada di dalamnya ialah Content utama Dari sebuah WEB BROWSER
+<section> --> Digunakan Untuk mendefinisikan Section apa yang sedang di buka 
+
+
