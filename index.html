@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/X-ICONRestaurant.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
@@ -13,11 +14,11 @@
     <header>
         <div class="container">
             <img src="img/restaurantlogo.png" alt="logo">
-            <div id="nav-button">
+            <div id="nav-button" class="btn-nav">
                 <i class="ph ph-list"></i>
             </div>
-            <nav id="nav-menu" class="active">
-                <ul >
+            <nav id="nav-menu" class="nav-menu">
+                <ul>
                     <li><a href="#home">HOME</a></li>
                     <li><a href="#menu">MENU</a></li>
                     <li><a href="#contact"><span>CONTACT</span></a></li>
@@ -33,6 +34,8 @@
                 <div class="home-text">
                     <header><h1>Eat in The Best Place In Town!</h1></header>
                     <p>Restaurant Is The Best Restaurant In Pekanbaru City, With Fancy And Delecious Food And Drink</p>
+                    <button class="home-button1"><a href="#menu">MENU</a></button>
+                    <button class="home-button2"><a href="#contact">CONTACT</a></button>
                 </div>
                 <div class="home-image">
                     <img src="img/restauranthome-bg.jpg" alt="">
@@ -43,7 +46,11 @@
         <br>
 
         <section class="menu" id="menu">
+            <div class="menu-header">
+                <h1>OUR <span>SIGNATURE</span></h1>
+            </div>
             <div class="container">
+                
                 <div class="menu-card">
                     <img src="img/dish-1.png" alt="fried-rice-with-eggs">
                     <div class="menu-text">
@@ -59,7 +66,7 @@
                         <p>$. 15.99</p>       
                         <button>ORDER NOW</button>                      
                     </div>
-                </div>
+                </div>  
                 <div class="menu-card">
                     <img src="img/dish-3.png" alt="Fish-And-Chips">
                     <div class="menu-text">
@@ -78,21 +85,24 @@
                 <div class="welcome-image">
                     <img class="welcome-img" src="img/dish-bigbg.png" alt="">
                 </div>
-                <div class="welcome-text">
+                 <div class="welcome-text">
                     <header><h1>Welcome To Our Restaurant</h1></header>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur laudantium sequi quo cum adipisci repellendus!</p>
                     <div class="welcome-button">
                         <button class="button-1"><span>MENU</span></button>
-                        <button class="button-2">BOOK NOW</button>
+                        <a href="pages/book.html">BOOK NOW</a>
                     </div>
                 </div>
             </div>
         </section>
-
+   
         <br>
 
         <section class="review">
             <div class="container">
+                <div class="review-header">
+                    <h1>Review From <span>Famous</span> Criticus</h1>
+                </div>
                 <div class="review-card">
                     <p>'Restaurant Is The Best Food I ate In My Life, The Taste Help Me Remember My Mom Food'</p>
                     <div class="review-profile">
@@ -105,11 +115,60 @@
 
         <br>
 
+        <section class="chef">
+            <div class="header-chef">
+                <h1>Meet Out <span>Genius</span> Chef</h1>
+            </div>
+            <div class="container">
+               
+                <div class="chef-profile">
+                    <img src="img/profile.png" alt="">
+                    <div class="chef-profile-text">
+                        <h3>Jonathan Nathari</h3>
+                        <h4>Head Chef/Head Kitchen</h4>
+                        <p>We Cook All Our Food With Love And Premium Ingredients From All Around The World</p>
+                    </div>
+                </div>
+                <div class="chef-profile">
+                    <img src="img/profile.png" alt="">
+                    <div class="chef-profile-text">
+                        <h3>Ezeria Tokita</h3>
+                        <h4>Dessert Specialist</h4>
+                        <p>We Cook All Our Food With Love And Premium Ingredients From All Around The World</p>
+                    </div>
+                </div>
+                <div class="chef-profile">
+                    <img src="img/profile.png" alt="">
+                    <div class="chef-profile-text">
+                        <h3>Lolita Ajoma</h3>
+                        <h4>Main Course</h4>
+                        <p>We Cook All Our Food With Love And Premium Ingredients From All Around The World</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <section class="restaurant-vid">
+            <div class="restaurant-vid-header">
+                <h1>Take A Look At Our <span>Fancy</span> Restaurant</h1>
+            </div>
+        <video autoplay loop muted src="img/Restaurant Ad Video Template (Editable).mp4"></video>
+        </section>
+
+            <br>
+        
         <section class="map">
+            <div class="map-header">
+                <h1>OUR <span>LOCATION</span></h1>
+            </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d593.0696049557253!2d101.51267535761038!3d0.4756473786187477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5afcd84b7452d%3A0x4277033d64fbf2f9!2sPekanbaru%2C%20Kulim%2C%20Tenayan%20Raya%2C%20Pekanbaru%20City%2C%20Riau%2028289!5e0!3m2!1sen!2sid!4v1737360433217!5m2!1sen!2sid" width="100%" height="450" style="border:0;border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
+    
+        
     </main>
+
 
     <!-- ! -->
 

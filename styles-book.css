@@ -1,0 +1,128 @@
+.container {
+	width: -webkit-calc(100% - 40px);   
+	width: -moz-calc(100% - 40px);
+	width: calc(100% - 40px);
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.container-2{
+    width: -webkit-calc(100% - 40px);   
+    width: -moz-calc(100% - 40px);
+    width: calc(100% - 40px);
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! */
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+header .container nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10px;
+    font-family: 'poppins', sans-serif;
+}
+
+header .container nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+header .container nav ul li a:hover{
+    border-bottom: 2px solid black;
+}
+header .container nav ul li a span {
+    color: #FF7F10;
+}
+
+header .container nav ul li a span:hover{
+    border-bottom: 3px solid #FF7F10;
+}
+
+header .container #nav-button {
+    display: none;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+form .container {
+    background-color: white;
+    color: #FF7F10;
+    border: 2px solid #FF7F10;
+    font-family: 'Popins', sans-serif;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 20px;
+}
+form .container input{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #FF7F10;
+    color: #FF7F10;
+    padding: 10px;
+}
+form .container input[type="submit"]{
+    padding: 10px 20px;
+    background-color: white;
+    color: #FF7F10;
+    border: 0;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 2px solid #FF7F10;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+    header .container{
+        flex-wrap: wrap;
+    }
+    header .container img{
+        width: 120px;
+    }
+
+    header .container nav{
+        width: 100%;    
+    }
+    header .container nav:not(.active){
+        display: none;
+        width: 100%;
+    }
+
+    header .container #nav-button {
+        display: flex;
+    }
+
+    header .nav-menu.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .btn-nav {
+        position: relative;
+        z-index: 11;
+    }
+
+    header nav ul {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }

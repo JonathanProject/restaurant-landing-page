@@ -64,7 +64,8 @@ main .home .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 150px;
+    gap: 20px;
 }
 
 main .home .container .home-text{
@@ -84,9 +85,25 @@ main .home .container .home-text p {
     font-weight: 500;
 }
 
+main .home .container .home-text button {
+    padding: 20px 40px;
+    border: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #FF7F10;
+    cursor: pointer;
+}
+
+main .home .container .home-text button a{
+    text-decoration: none;
+    color: white;
+}
+ 
+
 main .home .container .home-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 650px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -98,6 +115,19 @@ main .menu .container {
     justify-content: space-between;
     margin-bottom: 20px;
     flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+main .menu .menu-header{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    color: #FF7F10;
+}
+
+main .menu .menu-header h1 span {
+    color: black;
 }
 
 main .menu .container .menu-card {
@@ -119,12 +149,12 @@ max-width: 200px;
 }
 
 main .menu .container .menu-card .menu-text h3 {
-    text-align: left;
+    text-align: center;
     font-weight: 500;
 }
 
 main .menu .container .menu-card .menu-text p {
-    text-align: right;
+    text-align: center;
     font-weight: 300;
 }
 
@@ -199,19 +229,16 @@ main .welcome-content .container .welcome-text .welcome-button .button-1:hover{
     border: 1px solid black;
     color: black;
 }
-
-main .welcome-content .container .welcome-text .welcome-button .button-2{
-    padding: 15px 10px;
+main .welcome-content .container .welcome-text .welcome-button a {
     background-color: #FF7F10;
-    color: white;
-    border: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    cursor: pointer;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    color: #F3F3F3;
+    text-decoration: none;
 }
 
-main .welcome-content .container .welcome-text .welcome-button .button-2:hover{
+main .welcome-content .container .welcome-text .welcome-button a:hover {
     background-color: white;
     border: 1px solid #FF7F10;
     color: #FF7F10;
@@ -220,9 +247,9 @@ main .welcome-content .container .welcome-text .welcome-button .button-2:hover{
 
 main .container .welcome-image .welcome-img{
     display: block;
-    -webkit-animation: spin 8s linear infinite;
-    -moz-animation: spin 8s linear infinite;
-    animation: spin 8s linear infinite;
+    -webkit-animation: spin 12s linear infinite;
+    -moz-animation: spin 12s linear infinite;
+    animation: spin 12s linear infinite;
 }
 
 /*! keyframe !*/
@@ -241,9 +268,24 @@ main .container .welcome-image .welcome-img{
 
 main .review .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 500px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .review .container .review-header{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main .review .container .review-header h1{
+    font-size: 2.3rem;
+}
+
+main .review .container .review-header h1 span {
+    color: #FF7F10;
 }
 
 main .review .container .review-card {
@@ -280,6 +322,100 @@ main .review .container .review-card .review-profile {
 main .review .container .review-card .review-profile p {
     margin: 0;
     text-align: left;
+}
+
+/* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! */
+
+main .chef .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main .chef  .header-chef {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .chef  .header-chef h1{
+    font-size: 2.3rem;
+}
+main .chef  .header-chef h1 span{
+    color: #FF7F10;
+}
+
+main .chef .container .chef-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    background-color: #FF7F10;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+main .chef .container .chef-profile .chef-profile-text{
+}
+
+main .chef .container .chef-profile img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+/* ! */
+
+main .restaurant-vid .restaurant-vid-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 100px;
+}
+
+main .restaurant-vid .restaurant-vid-header h1 span {
+    color: #FF7F10;
+}
+
+main .restaurant-vid video {
+    width: 100%;
+    height: 400px;
+}
+
+/* ! */
+
+main .map .map-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .map .map-header h1 span {
+    color: #FF7F10;
+}
+
+main .restaurant-vid .restaurant-vid-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .restaurant-vid .restaurant-vid-header h1 span {
+    color: #FF7F10;
+}
+
+main .restaurant-vid video {
+    width: 100%;
+    height: 400px;
 }
 
 /* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! *//* ! */
@@ -326,7 +462,11 @@ footer .container-2 p {
     padding: 20px 0;
     font-family: 'Poppins', sans-serif;
 }
-
+@media only screen and (max-width: 1000px){
+    main .chef .container{
+        justify-content: center;
+    }
+}
 
 @media only screen and (max-width: 768px){
     header .container{
@@ -339,13 +479,34 @@ footer .container-2 p {
     header .container nav{
         width: 100%;    
     }
-    header .container nav.active{
+    header .container nav:not(.active){
         display: none;
         width: 100%;
     }
 
     header .container #nav-button {
         display: flex;
+    }
+
+    header .nav-menu.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        z-index: 10;
+    }
+
+    .btn-nav {
+        position: relative;
+        z-index: 11;
+    }
+
+    header nav ul {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
     }
 
 
@@ -377,6 +538,8 @@ footer .container-2 p {
         width: 100%;
         max-width: 200px;
     }
+
+
 
     footer .container {
     display: flex;
